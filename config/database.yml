@@ -23,6 +23,10 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  encoding: unicode
+  database: d9njideifkf91
+  host: ec2-54-225-88-191.compute-1.amazonaws.com
+  username: ydlnqxnmbujjkf
+  password: 3dcc571a382d9c4914a74965b791e189cd4cc0d00e225f450809e64cc59fe713
+  encoding: utf8
   pool: 5
   database: db/production.postgresql

@@ -9,6 +9,19 @@
   </head>
 
   <body>
+    <div class="header">
+    <h1><%= link_to "Edopen" .html_safe, root_path %></h1>
+
+    <% if user_signed_in? %>
+      Logged in as <%= current_user.email %>
+      <%= link_to "マイページ" .html_safe, mypage_path %>
+      <%= link_to "ログアウト" .html_safe, destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "新規登録" .html_safe, new_user_registration_path %>
+      <%= link_to "ログイン" .html_safe, new_user_session_path %>
+    <% end %>
+    </div>
+    <hr>
     <%= yield %>
   </body>
 </html>

@@ -11,6 +11,11 @@ gem 'rails', '~> 5.1.3'
 # Use pg not sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
+# use devise for user authentication
+gem 'devise'
+# use imagemagick 
+gem 'carrierwave'
+gem 'rmagick'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
