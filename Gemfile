@@ -15,7 +15,7 @@ gem 'pg', group: :production
 gem 'devise'
 # use imagemagick
 gem 'carrierwave'
-gem "rmagick", '~> 6.9.5-10', :require => 'RMagick'
+gem "rmagick", :require => 'RMagick'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
