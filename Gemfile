@@ -13,9 +13,9 @@ gem 'sqlite3', group: :development
 gem 'pg', group: :production
 # use devise for user authentication
 gem 'devise'
-# use imagemagick 
+# use imagemagick
 gem 'carrierwave'
-gem 'rmagick'
+gem "rmagick", '~> 6.9.5-10', :require => 'RMagick'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
