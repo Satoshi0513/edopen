@@ -6,6 +6,7 @@ class PagesController < ApplicationController
     @items = Item.all
   end
 
+
 private
 
 
